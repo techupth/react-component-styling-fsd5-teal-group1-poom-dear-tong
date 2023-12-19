@@ -20,7 +20,7 @@ function Alert(props) {
       message = "This is warning alert box";
       icon = warningIcon;
     } else if (props.type == "info") {
-      style = "background: #F9D9C8;";
+      style = "background: #F9EBC8;";
       message = "This is info alert box";
       icon = infoIcon;
     } else if (props.type == "success") {
