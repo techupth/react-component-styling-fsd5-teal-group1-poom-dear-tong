@@ -1,6 +1,10 @@
 import "./App.css";
 import { Button } from "./components/Button.jsx";
 import { Alert } from "./components/Alert.jsx";
+import frown from "./assets/frown.svg";
+import alertTriangle from "./assets/alert-triangle.svg";
+import alertCircle from "./assets/alert-circle.svg";
+import checkCircle from "./assets/check-circle.svg";
 function App() {
   return (
     <div className="App">
@@ -12,10 +16,10 @@ function App() {
       </div>
       <hr />
       <div className="alert-components-section">
-        <Alert textAlert="This is error alert box" />
-        <Alert textAlert="This is warning alert box" />
-        <Alert textAlert="This is info alert box" />
-        <Alert textAlert="This is success alert box" />
+        <Alert alertColor="#F9C8C8" alertImage={frown} textAlert="This is error alert box" />
+        <Alert alertColor="#F9D9C8" alertImage={alertTriangle} textAlert="This is warning alert box" />
+        <Alert alertColor="#F9EBC8" alertImage={alertCircle} textAlert="This is info alert box" />
+        <Alert alertColor="#CEF7CD" alertImage={checkCircle} textAlert="This is success alert box" />
       </div>
     </div>
   );
