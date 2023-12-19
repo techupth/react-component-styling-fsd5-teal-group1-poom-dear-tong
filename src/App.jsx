@@ -1,14 +1,21 @@
 import "./App.css";
-
+import { Button } from "./components/Button.jsx";
+import { Alert } from "./components/Alert.jsx";
 function App() {
   return (
     <div className="App">
       <div className="button-components-section">
-        {/* Render ตัว Button 2 แบบ */}
+        <Button />
+        <Button color="#07A4E8" />
+        <Button color="#DE5753" />
+        <Button color="#26B795" />
       </div>
       <hr />
       <div className="alert-components-section">
-        {/* Render ตัว Alert 4 แบบ */}
+        <Alert textAlert="This is error alert box" />
+        <Alert textAlert="This is warning alert box" />
+        <Alert textAlert="This is info alert box" />
+        <Alert textAlert="This is success alert box" />
       </div>
     </div>
   );
